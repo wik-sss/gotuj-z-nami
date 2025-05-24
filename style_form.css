@@ -1,0 +1,175 @@
+@font-face {
+  font-family: h1;
+  src: url(Rowdies-Bold.ttf);
+}
+
+@font-face {
+  font-family: zmiana;
+  src: url(JosefinSans-VariableFont_wght.ttf);
+}
+
+h1 {
+  font-family: h1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: zmiana;
+  background-color: #dbe7ec;
+  color: #264653;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #264653, #2e93bb);
+  flex-wrap: wrap;
+}
+
+.logo-tytul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ikonka {
+  width: 80px;
+  height: 80px;
+}
+
+.tytul-z-ikonka {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+
+.footer {
+  text-align: center;
+  background-color: #264653;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+/* RESPONSYWNOŚĆ MENU I HEADERA */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-tytul {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ikonka {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tytul-z-ikonka {
+    font-size: 24px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .menu li a {
+    font-size: 18px;
+  }
+}
+
+.kontakt {
+  background-color: #fcefdc;
+  padding: 32px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 32px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.kontakt h2 {
+  color: #264653;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 16px;
+  margin-bottom: 5px;
+  color: #264653;
+  font-weight: bold;
+}
+
+input, textarea {
+  padding: 13px;
+  border: 2px solid #2a9d8f;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 24px;
+  padding: 13px;
+  background-color: #f4a261;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e76f51;
+}
+
+.info {
+  margin-top: 16px;
+  color: #e76f51;
+  font-weight: bold;
+  text-align: center;
+}

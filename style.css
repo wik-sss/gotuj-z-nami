@@ -1,0 +1,255 @@
+@font-face {
+  font-family: h1;
+  src: url(Rowdies-Bold.ttf);
+}
+
+@font-face {
+  font-family: zmiana;
+  src: url(JosefinSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: powitanie;
+  src: url(DancingScript-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: zmiana;
+  background-color: #dbe7ec;
+  color: #264653;
+  line-height: 1.6;
+}
+
+/* Nagłówek */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #264653, #2e93bb);
+  flex-wrap: wrap;
+}
+
+.logo-tytul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ikonka {
+  width: 80px;
+  height: 80px;
+}
+
+.tytul-z-ikonka {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+  font-family: h1;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Powitanie */
+.powitanie {
+  font-family: powitanie;
+  font-size: 29px;
+  background-color: #fdd671;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Galeria zdjęć */
+.galeria-zdjec {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.galeria-zdjec img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #f1b788;
+  transition: transform 0.3s;
+}
+
+.galeria-zdjec img:hover {
+  transform: scale(1.05);
+}
+
+/* Układ główny */
+.main2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+.lewa-kolumna,
+.prawa-kolumna {
+  flex: 1;
+  min-width: 300px;
+}
+
+.prawa-kolumna {
+  background-color: #569ab4;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* Góra */
+.gora {
+  background-color: #f1b27d;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#link-przepisu {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #66a9d6;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+/* Karta */
+.karta {
+  background-color: white;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Dolna część */
+.dol {
+  background-color: #aacfe0;
+  border-radius: 5px;
+  padding: 50px 20px;
+}
+
+.dol h2 {
+  font-family: h1;
+  margin: 10px;
+  font-size: 30px;
+}
+
+/* Photo frame */
+.photo-frame {
+  background-color: white;
+  padding: 20px 20px 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 6px;
+}
+
+.photo-frame img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.caption {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Stopka */
+.footer {
+  text-align: center;
+  background-color: #264653;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* RESPONSYWNOŚĆ */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .ikonka {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tytul-z-ikonka {
+    font-size: 24px;
+  }
+
+  .main2 {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .powitanie {
+    font-size: 24px;
+  }
+
+  .karta {
+    width: 100%;
+  }
+
+  .dol {
+    padding: 30px 10px;
+  }
+
+  .galeria-zdjec {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  #link-przepisu {
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+}
+
+

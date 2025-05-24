@@ -1,0 +1,209 @@
+@font-face {
+  font-family: h1;
+  src: url(Rowdies-Bold.ttf);
+}
+
+@font-face {
+  font-family: zmiana;
+  src: url(JosefinSans-VariableFont_wght.ttf);
+}
+
+h1 {
+  font-family: h1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: zmiana;
+  background-color: #dbe7ec;
+  color: #264653;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: linear-gradient(90deg, #264653, #2e93bb);
+  flex-wrap: wrap;
+}
+
+.logo-tytul {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ikonka {
+  width: 80px;
+  height: 80px;
+}
+
+.tytul-z-ikonka {
+  color: white;
+  font-size: 30px;
+  margin: 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+
+.footer {
+  text-align: center;
+  background-color: #264653;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+/* RESPONSYWNOŚĆ MENU I HEADERA */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-tytul {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .ikonka {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tytul-z-ikonka {
+    font-size: 24px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .menu li a {
+    font-size: 18px;
+  }
+}
+
+
+
+
+
+
+.przepis {
+  background-color: #f4f1e8;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 12px;
+}
+
+.przepis h2 {
+  color: #264653;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info p {
+  color: #2a9d8f;
+  margin: 0.5rem 0;
+}
+
+
+ul {
+  padding-left: 15px;
+  color: #264653;
+}
+
+#btn1, #btn2, #btn3, #btn4 {
+  background-color: #f4a261;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  font-size: 20px;
+  font-family: h1;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
+  background-color: #e76f51;
+}
+
+#i1, #i2, #i3, #i4 {
+  background-color: #fff3dc;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  line-height: 1.6;
+  color: #264653;
+  display: none;
+}
+
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.main img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 250px;
+  border-radius: 10px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.przepis {
+    width: 370px; 
+    margin: 10px;   
+}
+
+
+
+
+
+
+
+
+

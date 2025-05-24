@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontakt - Gotuj z nami</title>
+  <link rel="stylesheet" href="style_form.css" />
+  <link rel="shortcut icon" href="IMG/icon.png" />
+</head>
+<body>
+  <div class="header">
+    <div class="logo-tytul">
+        <img src="IMG/icon.png" alt="Ikona" class="ikonka" />
+        <h1 class="tytul-z-ikonka">Gotuj z nami</h1>
+    </div>
+    <nav>
+        <ul class="menu">
+        <li><a href="index.html">Strona główna</a></li>
+        <li><a href="porady.html">Porady</a></li>
+        <li><a href="przepisy.html">Przepisy</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    </div>
+
+  <div class="main">
+    <section class="kontakt">
+      <h2>Formularz kontaktowy</h2>
+      <form id="formularzKontaktowy">
+        <label for="name">Imię:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="subject">Temat:</label>
+        <input type="text" id="subject" name="subject" required />
+
+        <label for="message">Wiadomość:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Wyślij</button>
+        <p id="form-info" class="info"></p>
+      </form>
+    </section>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2025 Wiktoria Szczepańska</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
